@@ -44,8 +44,14 @@
       width: 100px;
     }
   </style>
-
+  
   <script>
+    const inouts = documents.querrySelectorAll('.controls inputs');
+    function handleUpdate() {
+      const suffix = this.dataset.sizing || '';
+    document.documentElement.style.setproperty(`--$(this.name)`, this.value +suffix);
+}
+    inputs.fiorEach(input => input.addEventListener('change', ))
   </script>
 
 </body>
